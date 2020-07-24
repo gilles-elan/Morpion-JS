@@ -51,8 +51,9 @@ let endGame = elem => {
         col2: vic[1] + ',' + vic[4] + ',' + vic[7],
         col3: vic[2] + ',' + vic[5] + ',' + vic[8],
         diaDown: vic[0] + ',' + vic[4] + ',' + vic[8],
-        diaUp: vic[6] + ',' + vic[4] + ',' + vic[2],
+        diaUp: vic[6] + ',' + vic[4] + ',' + vic[2]
     }
+
 
     let p1win = 'X,X,X',
         p2win = 'O,O,O'

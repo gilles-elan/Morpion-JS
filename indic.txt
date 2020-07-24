@@ -43,3 +43,26 @@ A l'evenement clic sur une case
     FIN SI
 
 FIN ALGO
+
+
+
+
+
+    SI compteur >= 5
+    ALORS  //On teste la victoire
+        SI case1 == case2 ET case2 == case3 ET case1 == X
+        ALORS 
+            AFFICHER joueur 1 a gagné
+        SINON SI case1 == case2 ET case2 == case3 et case1 == O
+        ALORS 
+            AFFICHER joueur 2 a gagné
+
+        etc....
+        .......
+        .......
+        
+        SINON SI compteur === 9 
+            ALORS
+                AFFICHER match nul
+        FIN SI
+    FIN SI
