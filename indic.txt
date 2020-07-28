@@ -1,0 +1,68 @@
+1. Insérer des symboles X et O au click dans des cases
+1 bis. Alterner entre les symboles (si X vient de jouer alors le prochain sera pour O)
+2. Tester les lignes
+3. Tester les colonnes
+4. Tester les diagonales
+5. Si 3 symboles identiques sont alignés alors c'est gagné
+6. Si toutes les cases sont pleines sans 3 symboles alignés 
+alors match nul
+
+VARIABLES
+joueur1, joueur2, joueurActif, compteur
+
+DEBUT ALGO
+A l'evenement clic sur une case
+    SI le contenu de la case est vide
+    ALORS
+        SI le joueur actif est joueur 1
+        ALORS
+            dans la case, on affiche X
+            Le joueur actif devient le joueur 2
+        SINON
+            dans la case, on affiche O
+            Le joueur actif devient le joueur 1
+        FIN SI
+    SINON
+        Afficher message d'erreur  
+    FIN SI
+    SI compteur == 9
+    ALORS   
+        //TOUT tester 
+        SINON AFFICHER match nul
+    SINON SI compteur >= 5
+    ALORS  //On teste la victoire
+        SI case1 == case2 ET case2 == case3 ET case1 == X
+        ALORS 
+            AFFICHER joueur 1 a gagné
+        SINON SI case1 == case2 ET case2 == case3 et case1 == O
+        ALORS 
+            AFFICHER joueur 2 a gagné
+
+        etc.
+        FIN SI
+    FIN SI
+
+FIN ALGO
+
+
+
+
+
+    SI compteur >= 5
+    ALORS  //On teste la victoire
+        SI case1 == case2 ET case2 == case3 ET case1 == X
+        ALORS 
+            AFFICHER joueur 1 a gagné
+        SINON SI case1 == case2 ET case2 == case3 et case1 == O
+        ALORS 
+            AFFICHER joueur 2 a gagné
+
+        etc....
+        .......
+        .......
+        
+        SINON SI compteur === 9 
+            ALORS
+                AFFICHER match nul
+        FIN SI
+    FIN SI
