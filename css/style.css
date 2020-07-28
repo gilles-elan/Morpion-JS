@@ -15,8 +15,8 @@ h1 {
 }
 .afficheur {
     font-family: 'Press Start 2P', cursive;
-    width: 70%;
-    height: 80px;
+    /* width: 70%;
+    height: 80px; */
     border: 3px solid lightgrey;
     box-shadow:inset 2px 2px 10px 2px #646464;
     background: lightskyblue;
@@ -41,4 +41,19 @@ td {
 }
 .light {
     background: greenyellow;
+}
+.wrapper > p {
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#reload {
+    display: block;
+    margin: 2em auto;
+    border: 3px solid lightseagreen;
+    background: #fff;
+    padding: 0.5em 1em;
+    font-weight: bold;
 }
